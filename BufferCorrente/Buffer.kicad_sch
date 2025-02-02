@@ -141,6 +141,164 @@
 				)
 			)
 		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Diode:1N4007"
 			(pin_numbers hide)
 			(pin_names hide)
@@ -686,7 +844,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 72.39) (xy 156.21 76.2)
+			(xy 156.21 71.12) (xy 156.21 76.2)
 		)
 		(stroke
 			(width 0)
@@ -907,7 +1065,6 @@
 	(hierarchical_label "-16V"
 		(shape input)
 		(at 156.21 113.03 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -918,8 +1075,7 @@
 	)
 	(hierarchical_label "+16V"
 		(shape input)
-		(at 156.21 72.39 90)
-		(fields_autoplaced yes)
+		(at 156.21 71.12 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -929,7 +1085,7 @@
 		(uuid "d42b32b0-ade9-41fa-bdb9-ea3796be9c4e")
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Polarized")
 		(at 156.21 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -937,9 +1093,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "01e3fa00-826c-47f7-a7ed-4eb19864aaaf")
+		(uuid "0856f02d-5a6e-41e3-8fbf-a8a1d222cf0c")
 		(property "Reference" "C7"
-			(at 160.02 83.8199 0)
+			(at 160.02 82.9309 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -948,7 +1104,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 160.02 86.3599 0)
+			(at 160.02 85.4709 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -956,7 +1112,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 157.1752 88.9 0)
 			(effects
 				(font
@@ -974,7 +1130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Polarized capacitor"
 			(at 156.21 85.09 0)
 			(effects
 				(font
@@ -984,13 +1140,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "4432bb55-88a1-4a79-9001-2683be73d114")
+			(uuid "7e339714-bb53-4fb7-a277-006ddca8ebe3")
 		)
 		(pin "2"
-			(uuid "8ee76ee3-8a08-4985-b3c1-7fd7c2990046")
+			(uuid "7b386748-36a4-4ea4-808d-2bb4ee66d49f")
 		)
 		(instances
-			(project "BufferCorrente"
+			(project ""
 				(path "/c4f3ca93-09e5-4832-b5c0-69d9bec68818/953b8590-3e03-4217-8c21-ab0eed29fe98"
 					(reference "C7")
 					(unit 1)
@@ -1026,7 +1182,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 133.0452 88.9 0)
 			(effects
 				(font
@@ -1162,7 +1318,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 133.0452 104.14 0)
 			(effects
 				(font
@@ -1205,7 +1361,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "Device:C_Polarized")
 		(at 156.21 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1213,9 +1369,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "21c5c6a7-cd49-41fa-8a8f-2b821d35aa36")
+		(uuid "31d72508-3749-4676-9f05-1421e2acc26b")
 		(property "Reference" "C8"
-			(at 160.02 99.0599 0)
+			(at 160.02 98.1709 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1224,7 +1380,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 160.02 101.5999 0)
+			(at 160.02 100.7109 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1232,7 +1388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 157.1752 104.14 0)
 			(effects
 				(font
@@ -1250,7 +1406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "Polarized capacitor"
 			(at 156.21 100.33 0)
 			(effects
 				(font
@@ -1260,10 +1416,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "078957dd-15d1-40ec-b12c-6f52833f8ba2")
+			(uuid "b5123158-4636-45d1-9c90-f3945210bb12")
 		)
 		(pin "2"
-			(uuid "e8ca0589-d266-4467-946e-6dfd2c185266")
+			(uuid "b32d86bc-ac6c-4bba-8d02-04e8f323fb46")
 		)
 		(instances
 			(project "BufferCorrente"
@@ -1498,7 +1654,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 143.51 71.755 0)
 			(effects
 				(font
@@ -1584,7 +1740,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 143.51 114.935 0)
 			(effects
 				(font
